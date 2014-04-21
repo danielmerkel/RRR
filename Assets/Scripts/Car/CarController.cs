@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System.Collections.Generic;
 
 public class CarController : MonoBehaviour
 {
@@ -28,6 +29,7 @@ public class CarController : MonoBehaviour
     [SerializeField] private float adjustCentreOfMass = 0.25f;                      // alinhamento vertical do centro de massa
     [SerializeField] private Advanced advanced;                                     // container for the advanced setting which will expose as a foldout in the inspector
 	[SerializeField] bool preserveDirectionWhileInAir = true;                       // ajuda o carro a pousar na direçao certa se ele pular)
+
 
     [System.Serializable]
     public class Advanced                                                           // configuraçoes avançadas de controle do carro
@@ -69,7 +71,13 @@ public class CarController : MonoBehaviour
 	public float AvgSkid { get; private set; }                                      // o fator medio de derrapagem para todas as rodas
 	public float RevsFactor { get; private set; }                                   // valor entre 0-1 indicando onde as rotações atuais caiem entre 0 e max rotações
 	public float SpeedFactor { get;  private set; }                                 // valor entre 0-1 da velocidade do carro atual em relação à velocidade máxima
-	
+
+	public int CurrentLaps {get; private set;}    									// A lap atual que o carro se encontra.
+	public bool colliderPassed {get; private set;}									// Se o collider car ja passou pelo collider de checkpoint.
+	public string LastCheckpoint {get;private set;}
+	public int managerCheckpoint {get;set;}
+	public List<bool> CheckpointPass {get;set;}
+
 	public int NumGears {															// the numero de marchas configurado no carro
 		get { return advanced.numGears; }
 	}						
@@ -149,6 +157,13 @@ public class CarController : MonoBehaviour
 		//algumas velocidades uteis calculadas para uso posterior
 	    smallSpeed = maxSpeed*0.05f;
         maxReversingSpeed = maxSpeed * advanced.reversingSpeedFactor;
+
+		this.LastCheckpoint = "";
+		this.CheckpointPass = new List<bool>();
+		this.CheckpointPass.Add(false);
+		this.CheckpointPass.Add(false);
+		this.CheckpointPass.Add(false);
+		this.CheckpointPass.Add(false);
 	}
 
 
@@ -377,8 +392,90 @@ public class CarController : MonoBehaviour
 		Gizmos.DrawWireSphere(rigidbody.position + Vector3.up * adjustCentreOfMass, 0.2f);
 	}
 
-	// Immobilizacao pode ser chamaado por outros objetos, seo cara precisa ser incontrolavel (ex: explosao)
+	public void OnTriggerEnter(Collider other)
+	{
+		switch (other.name) {
+			case("CheckpointA"):
+			if(!this.LastCheckpoint.Equals(other.name))
+			{
+				if(this.LastCheckpoint.Equals("") || this.CurrentLaps == 0)
+				{
+					this.CurrentLaps++;
+					this.CheckpointPass[0] = true;
+				}
+				else 
+				{
+					var updateLap = true;
+					foreach (var passou in this.CheckpointPass) {
+						if(!passou){
+							updateLap= false;
+						}
+					}
+				
 
+					if(updateLap){
+						this.CurrentLaps++;
+						for (int i = 0; i < this.CheckpointPass.Count; i++) {
+							this.CheckpointPass[i] = false;
+						}
+						this.CheckpointPass[0] = true;
+					}
+
+				}
+				this.LastCheckpoint = other.name;
+			}
+			break;
+			case("CheckpointB"):
+			if(!this.LastCheckpoint.Equals(other.name))
+			{
+//				if(!this.colliderPassed)
+//				{
+//					this.managerCheckpoint = 1;
+//					this.colliderPassed = true;				
+//				}
+				this.CheckpointPass[1] = true;
+				this.LastCheckpoint = other.name;
+			}
+			break;
+			case("CheckpointC"):
+			if(!this.LastCheckpoint.Equals(other.name))
+			{
+//				if(!this.colliderPassed)
+//				{
+//					this.managerCheckpoint = 2;
+//					this.colliderPassed = true;				
+//				}
+				this.CheckpointPass[2] = true;
+				this.LastCheckpoint = other.name;
+			}
+			break;
+			case("CheckpointD"):
+			if(!this.LastCheckpoint.Equals(other.name))
+			{
+//				if(!this.colliderPassed)
+//				{
+//					this.managerCheckpoint = 3;
+//					this.CurrentLaps++;
+//					this.colliderPassed = true;				
+//				}
+				this.CheckpointPass[3] = true;
+				this.LastCheckpoint = other.name;
+			}
+			break;
+			default:
+			break;
+		}
+
+
+
+
+		var gameObjectCollider = GameObject.Find("Collider2");
+		var teste = gameObject.name;
+
+
+	}
+
+	// Immobilizacao pode ser chamaado por outros objetos, seo cara precisa ser incontrolavel (ex: explosao)
 	public void Immobilize ()
 	{
 		immobilized = true;
