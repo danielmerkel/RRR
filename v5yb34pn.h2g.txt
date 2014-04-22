@@ -1,0 +1,182 @@
+﻿
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch and 'origin/master' have diverged,
+# and have 1 and 1 different commit each, respectively.
+#   (use "git pull" to merge the remote branch into yours)
+#
+# You are currently rebasing branch 'master' on '0566b90'.
+#   (all conflicts fixed: run "git rebase --continue")
+#
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	modified:   Assembly-CSharp-Editor-vs.csproj
+#	modified:   Assembly-CSharp-Editor.csproj
+#	modified:   Assembly-CSharp-vs.csproj
+#	modified:   Assembly-CSharp.csproj
+#	modified:   Assembly-UnityScript-vs.unityproj
+#	modified:   Assembly-UnityScript.unityproj
+#	modified:   Assets/Assets/Scenes/prototype.unity
+#	new file:   Assets/Assets/Thumbs.db.meta
+#	new file:   Assets/Assets/TrackA/Model/Materials.meta
+#	new file:   Assets/Assets/TrackA/Model/Materials/Material #5918.mat
+#	new file:   Assets/Assets/TrackA/Model/Materials/Material #5918.mat.meta
+#	new file:   Assets/Assets/TrackA/Model/Materials/road_preta.mat
+#	new file:   Assets/Assets/TrackA/Model/Materials/road_preta.mat.meta
+#	new file:   Assets/Assets/TrackA/Textures/Thumbs.db.meta
+#	new file:   Assets/Scripts/Car/CarCollision.cs
+#	new file:   Assets/Scripts/Car/CarCollision.cs.meta
+#	modified:   Assets/Scripts/Car/CarController.cs
+#	modified:   Assets/Scripts/Car/CarGUI.cs
+#	modified:   Assets/Scripts/Car/CarUserControl.cs
+#	new file:   Assets/Scripts/Utility/CheckPointEnum.cs
+#	new file:   Assets/Scripts/Utility/CheckPointEnum.cs.meta
+#	modified:   Library/CurrentLayout.dwlt
+#	modified:   Library/CurrentMaximizeLayout.dwlt
+#	modified:   Library/InspectorExpandedItems.asset
+#	modified:   Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+#	modified:   Library/ScriptAssemblies/Assembly-CSharp-Editor.dll.mdb
+#	modified:   Library/ScriptAssemblies/Assembly-CSharp.dll
+#	modified:   Library/ScriptAssemblies/Assembly-CSharp.dll.mdb
+#	modified:   Library/ScriptAssemblies/Assembly-UnityScript.dll
+#	modified:   Library/ScriptAssemblies/Assembly-UnityScript.dll.mdb
+#	modified:   Library/assetDatabase3
+#	modified:   Library/expandedItems
+#	modified:   Library/guidmapper
+#	modified:   Library/metadata/00/00000000000000002000000000000000
+#	modified:   Library/metadata/00/00000000000000003000000000000000
+#	modified:   Library/metadata/00/00000000000000004100000000000000
+#	modified:   Library/metadata/00/00000000000000005000000000000000
+#	modified:   Library/metadata/00/00000000000000006000000000000000
+#	modified:   Library/metadata/00/00000000000000006100000000000000
+#	modified:   Library/metadata/00/00000000000000007000000000000000
+#	modified:   Library/metadata/00/00000000000000009000000000000000
+#	modified:   Library/metadata/00/0000000000000000a000000000000000
+#	modified:   Library/metadata/00/0000000000000000b000000000000000
+#	modified:   Library/metadata/00/0000000000000000c000000000000000
+#	modified:   Library/metadata/01/013fa3e6baf69ca4ca4a8714dd9b913f
+#	modified:   Library/metadata/03/03bf91d88fce91c41995d27de63cc967
+#	modified:   Library/metadata/03/03e3bd08a6e70684dbe299a3e185fdd2
+#	modified:   Library/metadata/06/067854cee57ccc94da29c5e9afd53375
+#	modified:   Library/metadata/0e/0e01042fa1e17844dab27a885bf7d7d9
+#	modified:   Library/metadata/0e/0e7ee4df08df88c4880f43398f9ad2c2
+#	modified:   Library/metadata/10/10e5cc2ee27b5b04ea2207ff29fe284c
+#	new file:   Library/metadata/19/199b13a8cb4817b4ca001523c8ec8f4c
+#	new file:   Library/metadata/1d/1d59c47e10ee4de43ad13a51a7b79e48
+#	modified:   Library/metadata/1d/1dab20b40fcb7fb4e9c23c5b4b0ade65
+#	modified:   Library/metadata/1f/1f10b7efb64e4ce4ca807add7b9f640a
+#	modified:   Library/metadata/20/20fa55eb64c5cea4aa3c71ae19c434bf
+#	modified:   Library/metadata/22/2237017b8413974498fa5296182ba028
+#	modified:   Library/metadata/22/22bbf57ec543cee42a5aa0ec2dd9e457
+#	modified:   Library/metadata/24/246cc59c7a84ea44f87f6b70acfe30c5
+#	modified:   Library/metadata/28/28853baa2f083c74890b7e88f75fa5d3
+#	modified:   Library/metadata/29/29014cd42b6d273408e0ceefd336c0b3
+#	modified:   Library/metadata/2c/2c29c08dd1c0b6749b7cd0fcff7a29fd
+#	modified:   Library/metadata/31/31179a6bbd11e2c3d000dc0b8d76c639
+#	modified:   Library/metadata/33/33a18574a1737ab42a75137c3b83c9be
+#	modified:   Library/metadata/34/345356834a911354b851db29ac26fdfa
+#	modified:   Library/metadata/35/35a5f0ed001cde5449d8d2d8b4dc4dd6
+#	modified:   Library/metadata/38/38748c7bed906cc4d94128dd0415374d
+#	modified:   Library/metadata/3a/3a7cedf246fca744f90cbdc9dbe41166
+#	modified:   Library/metadata/3c/3cae02495b88d2d4fbf19382b7993691
+#	new file:   Library/metadata/3e/3e1c93cc9a2cddf4f8b130276b2fd2f5
+#	modified:   Library/metadata/41/41814f36195e8f9428f672b858657de6
+#	modified:   Library/metadata/42/42a2214a01a746a40b4c9e695d268960
+#	modified:   Library/metadata/48/4876fc9dc009bbe4493553020a561611
+#	modified:   Library/metadata/4b/4b6aa99de5d21424eab6ae279f31475b
+#	modified:   Library/metadata/4d/4d1b2134db718cb4f83b51eea9cf450a
+#	modified:   Library/metadata/4f/4f4ac018320c17243a2e1539ebee2b7a
+#	modified:   Library/metadata/51/518b7cae87ba12649938a72360cafbe6
+#	modified:   Library/metadata/51/519c6ad7a86ae8e4fb58ad2e09193daa
+#	modified:   Library/metadata/56/5699dddcce16c4543b95951c4ce0e092
+#	modified:   Library/metadata/56/56fb5b67d7f85fe4793d9f029f9ae666
+#	modified:   Library/metadata/58/58cb183e16853564e9ed457f8a296db1
+#	modified:   Library/metadata/58/58e983d4560cdac408bacbd40958c21f
+#	new file:   Library/metadata/59/59c21ec91d7e8404bb73c35e3d922626
+#	modified:   Library/metadata/5a/5a09dad89d11389ed000e82b8d76c639
+#	modified:   Library/metadata/5a/5aa95b3fa56e28f43a84e301c3d19e08
+#	modified:   Library/metadata/5a/5acdf4a390367794da6b4f12561dd461
+#	modified:   Library/metadata/5a/5ae8b78c31d974941bb042f0360fe9ad
+#	modified:   Library/metadata/5b/5b1dc07dd36426549936879004f9d42f
+#	modified:   Library/metadata/5d/5d4510cc77b85c44589baaa5a4efc99c
+#	new file:   Library/metadata/5e/5ed14009c5235564fa6906bba7cc74a9
+#	modified:   Library/metadata/64/643c971818f68d3439e84b5d8bdafe07
+#	modified:   Library/metadata/67/67ec85b4d7bad974d85bc2fb3e61711d
+#	modified:   Library/metadata/6d/6d0ba4ac2113a7e44bad6700e51b79c5
+#	modified:   Library/metadata/73/7311ab0750a840e43b1c7ba38fbd1686
+#	modified:   Library/metadata/73/7331cf85540f61f4084f12b746e1f91b
+#	new file:   Library/metadata/76/76872654e4f88d44f9b7c9dd4b6c311c
+#	modified:   Library/metadata/89/896b6ff456a005842967631631a8ea42
+#	modified:   Library/metadata/89/89a534d869bfccd49bebf7cb6fb244b6
+#	modified:   Library/metadata/8b/8b8ba88cbd11e2c3d000dc0b8d76c639
+#	modified:   Library/metadata/91/91c94071de974eb42b29b65e45ce13df
+#	modified:   Library/metadata/94/94976bc7078d21e4db612cf529e44ec4
+#	modified:   Library/metadata/94/94b04ec3bda6b7747aa53936ef3b0ae2
+#	modified:   Library/metadata/96/96468c245ae8e0d4f8f1c7a7b8b0542e
+#	modified:   Library/metadata/99/99cdb721ca8afbb42899dc2134e95134
+#	modified:   Library/metadata/9c/9ce3a3a1349a5774b94761844e652a65
+#	modified:   Library/metadata/9d/9db865986f75ee44eba89ace4646af65
+#	modified:   Library/metadata/9e/9e8fec500e709ed4eaa3d24ecef15097
+#	modified:   Library/metadata/9e/9ec07e234a9305e42b5457fe415fd98b
+#	modified:   Library/metadata/9e/9ec1e45165d1f2544bff59f5a80db8ab
+#	modified:   Library/metadata/a1/a1347817507220a4384f3ff6f7c24546
+#	modified:   Library/metadata/a4/a4cdca73d61814d33ac1587f6c163bca
+#	modified:   Library/metadata/a6/a62942d9af3f36d448094c6ed1f214dd
+#	modified:   Library/metadata/a8/a87b37580288ffd4a8701927bd5694f7
+#	modified:   Library/metadata/a8/a8d3968294210ba4a9d2bb96dfa74a16
+#	modified:   Library/metadata/a9/a9dfad760b6e9455593192a6d869f7ed
+#	modified:   Library/metadata/aa/aa2bea12af9a61a4d95704738a4d18de
+#	modified:   Library/metadata/ae/ae55abaadcc845c43ae7e635573f18f0
+#	modified:   Library/metadata/b1/b16c22b4e3fa11d4b9e83f6fcfac8cc6
+#	modified:   Library/metadata/b3/b31332a1d9c60fd41b620e0d3bb85419
+#	modified:   Library/metadata/b5/b56a521c7e96e064c809599300590e46
+#	modified:   Library/metadata/ba/baec086904791744185aaa07a6cf55c2
+#	modified:   Library/metadata/bd/bd9566abdbf08834281bfb4ea8b92a5d
+#	modified:   Library/metadata/c4/c45b55e1a1ed8c343bec3615f28c7ca5
+#	modified:   Library/metadata/c4/c4d8928c75c21af43998193f0f038429
+#	modified:   Library/metadata/c6/c617e7cbee0d2344a9b5e53116c43a2c
+#	modified:   Library/metadata/c8/c8634e062924929664361c08745211fb
+#	modified:   Library/metadata/cb/cb5fadb6f21d88f4aa47dd423a54b885
+#	modified:   Library/metadata/cd/cd056dd0666d11243ae48619f0782f9f
+#	modified:   Library/metadata/d2/d21eb8409551de147ae1fbc461d1562d
+#	modified:   Library/metadata/d3/d3bdf8954150bc74085ab9cbdf4b032d
+#	modified:   Library/metadata/d4/d47eea6bddbaf7a42bbe68b979cab74f
+#	modified:   Library/metadata/d9/d947636a9390f6a46a121124154e6e3f
+#	modified:   Library/metadata/ea/eaa12a81843e0b845b73021210dce2b4
+#	modified:   Library/metadata/ee/eed5000546afeea48bdeeb5cf208c2e9
+#	modified:   Library/metadata/ef/ef0a7905ec15ef14491a73d78835f300
+#	modified:   Library/metadata/ef/efaaea7f6a25a4d4fafa9fce85bf947f
+#	new file:   Library/metadata/ef/efb8b47950e08c547a3a144445a2e395
+#	modified:   Library/metadata/f2/f2ec2b96de5640e42a622fc3064f1c80
+#	modified:   Library/metadata/f3/f300adc442b5ec04bbf127145d1e557c
+#	modified:   Library/metadata/f4/f4dd0bba6decdd5418fd3d541ff5f7f0
+#	modified:   Library/metadata/f9/f91ce81581e808a4da0d17e6a08257df
+#	modified:   Library/metadata/f9/f934e449f4d67ff42a7fe8d00b788fbc
+#	modified:   Library/metadata/fc/fccf9cc52b0ffd2469c7b7d9e831b69e
+#	new file:   RRR-csharp.sln
+#	new file:   RRR.sln
+#	new file:   RRR.userprefs
+#	new file:   qimackte.smh.txt
+#	new file:   rj1bkxbi.edv.txt
+#
+# Changes not staged for commit:
+#   (use "git add/rm <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   Library/CurrentLayout.dwlt
+#	modified:   Library/assetDatabase3
+#	modified:   Library/guidmapper
+#	deleted:    Library/metadata/5e/5ed14009c5235564fa6906bba7cc74a9
+#	deleted:    Library/metadata/76/76872654e4f88d44f9b7c9dd4b6c311c
+#	modified:   RRR-csharp.sln
+#	modified:   RRR.sln
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	3s402vrz.dh1.txt
+#	3t40xtsw.pwr.txt
+#	gofy3clw.50e.txt
+
